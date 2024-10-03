@@ -19,3 +19,23 @@
     font-weight: 300;
     line-height: 18px;
 }
+
+@media screen and (min-width: 400px) {
+    .hero {
+        max-width: 400px;
+    }
+
+    .hero__photoGrid {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .hero {
+        max-width: 600px;
+    }
+
+    .hero__photoGrid {
+        max-width: 400px;
+    }
+}

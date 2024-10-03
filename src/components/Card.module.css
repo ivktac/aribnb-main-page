@@ -27,3 +27,27 @@
 .card__cost__boldText {
     font-weight: bold;
 }
+
+@media screen and (min-width: 420px) {
+    .card {
+        width: 150px;
+        height: 200px;
+        font-size: 10px;
+    }
+
+    .card__image {
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 200px;
+        height: 250px;
+        font-size: 14px;
+    }
+
+    .card__image {
+        border-radius: 12px;
+    }
+}
