@@ -1,0 +1,27 @@
+.card {
+    width: 175px;
+    font-size: 12px;
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__stats {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.card__stats__star {
+    height: 14px;
+}
+
+.card__stats__grayText {
+    color: #918e9b;
+}
+
+.card__cost__boldText {
+    font-weight: bold;
+}
