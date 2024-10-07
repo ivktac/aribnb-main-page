@@ -17,6 +17,7 @@ function Cards() {
             title={card.title}
             descprtion={card.description}
             price={card.price}
+            openSpots={card.openSpots}
           />
         );
       })}

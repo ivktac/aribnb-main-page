@@ -2,6 +2,7 @@
     width: 175px;
     height: 235px;
     font-size: 12px;
+    position: relative;
 }
 
 .card__image {
@@ -26,6 +27,17 @@
 
 .card__cost__boldText {
     font-weight: bold;
+}
+
+.card__badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 420px) {
