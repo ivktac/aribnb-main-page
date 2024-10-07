@@ -1,20 +1,32 @@
 import styles from "./Card.module.css";
 import starImage from "../images/star.png";
 
-function Card({ title, description, image, cost, starsRate, starsTotal }) {
+function Card({
+  img,
+  rating,
+  reviewCount,
+  location,
+  title,
+  descprtion,
+  price,
+}) {
   return (
     <article className={styles.card}>
-      <img src={image} alt={title} className={styles.card__image} />
+      <img
+        src={`../images/${img}`}
+        alt={descprtion}
+        className={styles.card__image}
+      />
       <div className={styles.card__stats}>
         <img src={starImage} alt="Stars" className={styles.card__stats__star} />
-        <span>{starsRate}</span>
-        <span className={styles.card__stats__grayText}>({starsTotal})</span>
+        <span>{rating}</span>
+        <span className={styles.card__stats__grayText}>({reviewCount})</span>
         <span className={styles.card__stats__grayText}>•</span>
-        <span className={styles.card__stats__grayText}>USA</span>
+        <span className={styles.card__stats__grayText}>{location}</span>
       </div>
-      <p>{description}</p>
+      <p>{title}</p>
       <p>
-        <span className={styles.card__cost__boldText}>From ${cost}</span> /
+        <span className={styles.card__cost__boldText}>From ${price}</span> /
         person
       </p>
     </article>
